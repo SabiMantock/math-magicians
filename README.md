@@ -45,8 +45,9 @@ In this project, I am using React to create a calculator app.
 
 ### Key Features <a name="key-features"></a>
 
-- Created a React component that matches the design.
-- Used class-based components
+- implmented an event handler to use the math logic for the calculator.
+- Implemented calculate and operate functionalities.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
