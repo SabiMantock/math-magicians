@@ -45,8 +45,8 @@ In this project, I am using React to create a calculator app.
 
 ### Key Features <a name="key-features"></a>
 
-- Used gitflow.
-- Created a react app
+- Created a React component that matches the design.
+- Used class-based components
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
