@@ -1,0 +1,27 @@
+.container {
+  width: 280px;
+  margin: 50px auto;
+  border: 1px solid #ddd;
+}
+
+.cal_result {
+  display: flex;
+  justify-content: flex-end;
+  overflow: auto;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 10px 0;
+  padding-right: 5px;
+}
+
+.btn-17 {
+  width: 140px;
+}
+
+.btn-4,
+.btn-8,
+.btn-12,
+.btn-16,
+.btn-19 {
+  background-color: #f5913e;
+}
