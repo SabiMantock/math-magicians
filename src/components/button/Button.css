@@ -1,0 +1,7 @@
+button {
+  border: 1px solid #ddd;
+  cursor: pointer;
+  width: 70px;
+  outline: none;
+  padding: 10px 0;
+}
