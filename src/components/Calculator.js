@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 import {
   NUM_1,
@@ -10,43 +10,70 @@ import {
 import Button from './button/Button';
 import './Calculator.css';
 
-export default class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      operator: null,
-      next: null,
-      total: null,
-    };
-    this.handleResult = this.handleResult.bind(this);
-  }
+const Calculator = () => {
+  const [state, setState] = useState({ operator: null, next: null, total: null });
 
-  handleResult = (text) => {
-    const result = calculate(this.state, text);
-    this.setState(result);
-  }
+  const handleResult = (text) => {
+    const result = calculate(state, text);
+    setState(result);
+  };
 
-  render() {
-    const { total, next } = this.state;
-    return (
-      <div className="container">
-        <div className="cal_result">{next || total || 0}</div>
-        <div>
-          {OPERATOR.map((item) => (<Button key={item.id} title={item.op} className={`btn-${item.id}`} onClick={() => this.handleResult(item.op)} />))}
-        </div>
-        <div>
-          {NUM_1.map((item) => (<Button key={item.id} title={item.num} className={`btn-${item.id}`} onClick={() => this.handleResult(item.num)} />))}
-        </div>
-        <div>
-          {NUM_2.map((item) => (<Button key={item.id} title={item.num} className={`btn-${item.id}`} onClick={() => this.handleResult(item.num)} />))}
-        </div>
-        <div>
-          {NUM_3.map((item) => (<Button key={item.id} title={item.num} className={`btn-${item.id}`} onClick={() => this.handleResult(item.num)} />))}
-        </div>
-        <div>
-          {NUM_4.map((item) => (<Button key={item.id} title={item.num} className={`btn-${item.id}`} onClick={() => this.handleResult(item.num)} />))}
-        </div>
+  const { total, next } = state;
+  return (
+    <div className="container">
+      <div className="cal_result">{next || total || 0}</div>
+      <div>
+        {OPERATOR.map((item) => (
+          <Button
+            key={item.id}
+            title={item.op}
+            className={`btn-${item.id}`}
+            onClick={() => handleResult(item.op)}
+          />
+        ))}
       </div>
-    );
-  }
-}
+      <div>
+        {NUM_1.map((item) => (
+          <Button
+            key={item.id}
+            title={item.num}
+            className={`btn-${item.id}`}
+            onClick={() => handleResult(item.num)}
+          />
+        ))}
+      </div>
+      <div>
+        {NUM_2.map((item) => (
+          <Button
+            key={item.id}
+            title={item.num}
+            className={`btn-${item.id}`}
+            onClick={() => handleResult(item.num)}
+          />
+        ))}
+      </div>
+      <div>
+        {NUM_3.map((item) => (
+          <Button
+            key={item.id}
+            title={item.num}
+            className={`btn-${item.id}`}
+            onClick={() => handleResult(item.num)}
+          />
+        ))}
+      </div>
+      <div>
+        {NUM_4.map((item) => (
+          <Button
+            key={item.id}
+            title={item.num}
+            className={`btn-${item.id}`}
+            onClick={() => handleResult(item.num)}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Calculator;
