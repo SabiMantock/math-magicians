@@ -54,7 +54,7 @@ In this project, I am using React to create a calculator app.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [🧮 Math Magicans](#)
+- [🧮 Math Magicans](https://math-magicians-dy6w.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
