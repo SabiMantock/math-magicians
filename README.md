@@ -45,7 +45,7 @@ In this project, I am using React to create a calculator app.
 
 ### Key Features <a name="key-features"></a>
 
-- refactor calculator from class based components to react hooks.
+- Routing between pages on the Client Side.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

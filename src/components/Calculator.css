@@ -1,7 +1,7 @@
 .container {
-  width: 280px;
-  margin: 50px auto;
+  width: 500px;
   border: 1px solid #ddd;
+  height: 300px;
 }
 
 .cal_result {
@@ -12,10 +12,12 @@
   color: #fff;
   padding: 10px 0;
   padding-right: 5px;
+  height: 50px;
+  align-items: center;
 }
 
 .btn-17 {
-  width: 140px;
+  width: 250px;
 }
 
 .btn-4,
