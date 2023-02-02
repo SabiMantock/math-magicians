@@ -1,0 +1,11 @@
+.calpage {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin-top: 50px;
+}
+
+.text {
+  margin: 0;
+}
